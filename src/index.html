@@ -8,6 +8,32 @@
 </head>
 
 <body>
+
+  <div class="bg" id="modalBg"></div>
+  <div class="modal" id="modal">
+    <h2>Модалка</h2>
+    <p>Это модалка</p>
+    <button class="button">Закрыть</button>
+  </div>
+  <button class="button" id="modalBtn">Модалка</button>
+  <form class="form" id="form">
+    <h1 class="form__title">FORM</h1>
+    <div class="form__inputsWrapper">
+      <input type="text" placeholder="Name" class="input" name="user">
+      <p class="errorMessage"></p>
+      <input type="email" placeholder="Email" class="input" name="email">
+      <p class="errorMessage"></p>
+      <input type="text" placeholder="Phone" class="input" name="phone" id="phone">
+      <p class="errorMessage"></p>
+      <textarea class="textarea" placeholder="Message" name="message"></textarea>
+      <p class="errorMessage"></p>
+    </div>
+    <button class="form__btn button" id="submitBtn">SEND</button>
+  </form>
+  <div id="notification" class="notification">
+    <h2 class="notification__status">Error</h2>
+    <p class="notification__message">Bad request</p>
+  </div>
 </body>
 
 </html>
